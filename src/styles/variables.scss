@@ -1,0 +1,22 @@
+$black: #000;
+$white: #ffffff;
+$cream:#F2EFE5;
+$grey:#808080;
+
+$smallScreen:767px;
+$mediumScreen:1023px;
+
+.text {
+    padding: 0 32px;
+    letter-spacing: 1px;
+}
+
+.title {
+    margin: 16px 0;
+}
+
+.bg-black {
+    background-color:rgba($black, 0.8);
+    transform: ease-in;
+    transition: 0.8s;
+}

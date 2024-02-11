@@ -1,0 +1,1 @@
+{"version":3,"sources":["container-big.scss"],"names":[],"mappings":"AAAA,eACI,iBACA,WACA","file":"../container-big.css","sourcesContent":[".container-big {\r\n    max-width: 1800px;\r\n    width: 100%;\r\n    margin: 0 auto;\r\n}"]}

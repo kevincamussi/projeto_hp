@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).on("scroll",function(){var o=$(".head");32<$(this).scrollTop()?o.addClass("bg-black"):o.removeClass("bg-black")})});

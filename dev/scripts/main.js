@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".filmes__card").flip()});

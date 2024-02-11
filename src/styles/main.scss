@@ -1,0 +1,14 @@
+@import './reset';
+@import './header';
+@import './container-big.scss';
+@import './container-medium.scss';
+@import './filmes.scss';
+
+body {
+    background-image: url('../images/hogwarts.jpg' );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
