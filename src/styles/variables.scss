@@ -20,3 +20,9 @@ $mediumScreen:1023px;
     transform: ease-in;
     transition: 0.8s;
 }
+
+@mixin active {
+    background-color:$white;
+    color: $black;
+    transition: 1s;
+}

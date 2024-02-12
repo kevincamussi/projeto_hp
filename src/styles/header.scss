@@ -36,6 +36,9 @@
         list-style-type: none;
         margin-top: 48px;
 
+        .active {
+            @include active;
+        }
     
         &__link {
             color:$white;
@@ -44,11 +47,8 @@
             padding: 20px;
             font-size: 1.1em;
 
-
             &:hover{
-                background-color:$white;
-                color: $black;
-                transition: 1s;
+                @include active;
             }
         }
     }
