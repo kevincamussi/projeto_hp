@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    AOS.init();
+
     const navTab = $('.head-menu__link');
     const pageHeader =  $('.head');
     const height = 32;
@@ -21,6 +23,7 @@ $(document).ready(function(){
         }
 
         $(this).scrollTop() > height ? addBgColor() : removeBgColor();
+        
 
 
         navTab.each(function(){
