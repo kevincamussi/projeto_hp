@@ -24,7 +24,7 @@ $(document).ready(function() {
     image.attr('src', pedraFilosofal.img);
     description.text(pedraFilosofal.description);
 
-    filmesCard.appendTo(filmesContainer).append(filmesItem);
+    filmesCard.append(filmesItem).appendTo(filmesContainer);
     filmesFront.append(image).appendTo(filmesItem);
     filmesBack.append(description).appendTo(filmesItem);
     
