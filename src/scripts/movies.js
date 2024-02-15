@@ -12,9 +12,9 @@ $(document).ready(function () {
         }
     ]
 
+    const filmesContainer = $('.filmes');
     
     movies.forEach(function (filme) {
-        const filmesContainer = $('.filmes');
         const filmesCard = $("<div></div>", { "class": "filmes__card" });
         const filmesItem = $("<div></div>", { "class": "filmes__item" });
         const filmesFront = $("<div></div>", { "class": "filmes__front" });
