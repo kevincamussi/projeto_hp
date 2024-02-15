@@ -12,19 +12,19 @@ $(document).ready(function () {
         }
     ]
 
-    const filmesContainer = $('.filmes');
     
     movies.forEach(function (filme) {
+        const filmesContainer = $('.filmes');
         const filmesCard = $("<div></div>", { "class": "filmes__card" });
         const filmesItem = $("<div></div>", { "class": "filmes__item" });
         const filmesFront = $("<div></div>", { "class": "filmes__front" });
         const filmesBack = $("<div></div>", { "class": "filmes__back" });
         const image = $("<img/>");
         const description = $('<p></p>');
-
-        image.attr('src', filme.img);
+    
+        image.attr({'src':filme.img, 'alt':filme.name, "class": "filmes__imagem"});
         description.text(filme.description);
-
+    
         filmesCard.append(filmesItem).appendTo(filmesContainer);
         filmesFront.append(image).appendTo(filmesItem);
         filmesBack.append(description).appendTo(filmesItem);
