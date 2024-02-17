@@ -11,6 +11,19 @@ const plumber = require("gulp-plumber");
 
 const scripts = () => {
     return gulp.src('./src/scripts/*.js')
+        .pipe(plumber())
+            .pipe(
+                babel({
+                    presets: [
+                        [
+                            "@babel/env",
+                            {
+                                modules: false,
+                            },
+                        ],
+                    ],
+                })
+            )
         .pipe(uglify())
         .pipe(obfuscate())
         .pipe(gulp.dest('./dist/scripts'));
@@ -86,7 +99,7 @@ const compressHtmlDev = () => {
 
 
 
-exports.default = gulp.parallel(compressHtml);
+exports.default = gulp.series(scripts, styles, compressImg, compressHtml, clear);
 
 exports.default = function () {
     gulp.watch('./src/scripts/*.js', { ignoreInitial: false }, gulp.parallel(scriptDev));
