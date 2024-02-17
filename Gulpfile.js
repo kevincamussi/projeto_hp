@@ -99,7 +99,7 @@ const compressHtmlDev = () => {
 
 
 
-exports.default = gulp.series(scripts, styles, compressImg, compressHtml, clear);
+exports.default = gulp.parallel(scripts, compressImg, styles, compressHtml, clear);
 
 // exports.default = function () {
 //     gulp.watch('./src/scripts/*.js', { ignoreInitial: false }, gulp.parallel(scriptDev));
