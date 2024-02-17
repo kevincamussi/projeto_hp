@@ -101,9 +101,9 @@ const compressHtmlDev = () => {
 
 exports.default = gulp.series(scripts, styles, compressImg, compressHtml, clear);
 
-exports.default = function () {
-    gulp.watch('./src/scripts/*.js', { ignoreInitial: false }, gulp.parallel(scriptDev));
-    gulp.watch('./src/images/*', { ignoreInitial: false }, gulp.parallel(compressImgDev));
-    gulp.watch('./src/styles/*.scss', { ignoreInitial: false }, gulp.parallel(stylesDev));
-    gulp.watch('./src/index.html', { ignoreInitial: false }, gulp.parallel(compressHtmlDev));
-}
+// exports.default = function () {
+//     gulp.watch('./src/scripts/*.js', { ignoreInitial: false }, gulp.parallel(scriptDev));
+//     gulp.watch('./src/images/*', { ignoreInitial: false }, gulp.parallel(compressImgDev));
+//     gulp.watch('./src/styles/*.scss', { ignoreInitial: false }, gulp.parallel(stylesDev));
+//     gulp.watch('./src/index.html', { ignoreInitial: false }, gulp.parallel(compressHtmlDev));
+// }
