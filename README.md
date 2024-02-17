@@ -1,4 +1,4 @@
-#Projeto Harry Potter
+# Projeto Harry Potter
 
 Este é um projeto web inspirado no universo mágico de Harry Potter. Nele, você encontrará uma interface interativa e envolvente com elementos visuais e funcionais criados utilizando HTML, SASS, jQuery e Gulp.
 
