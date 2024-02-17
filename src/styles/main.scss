@@ -5,11 +5,16 @@
 @import './filmes.scss';
 @import './footer.scss';
 @import './characters.scss';
+@import './variables.scss';
 
 body {
     background-image: url('../images/hogwarts.jpg' );
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width:$mediumScreen){
+        background-size: contain;
+    }
 }
 
 
