@@ -31,7 +31,7 @@ const scripts = () => {
 
 const styles = () => {
     return gulp.src('./src/styles/*.scss')
-        , pipe(sourcemaps.init())
+            .pipe(sourcemaps.init())
             .pipe(sass({ outputStyle: 'compressed' }))
             .pipe(sourcemaps.write('./maps'))
             .pipe(gulp.dest('./dist/styles'));
