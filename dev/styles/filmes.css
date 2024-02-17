@@ -1,0 +1,2 @@
+.text{padding:0 32px;letter-spacing:1px}.title{margin:16px 0}.bg-black{background-color:rgba(0,0,0,.8);transform:ease-in;transition:.8s}.filmes{display:grid;grid-template-columns:repeat(auto-fit, minmax(16rem, 24rem));justify-content:center;gap:48px}.filmes__item{height:540px;cursor:pointer}.filmes__item__text{padding:16px}.filmes__imagem{height:540px;width:100%;object-fit:contain}.filmes__back{border:1px solid gray}
+/*# sourceMappingURL=maps/filmes.css.map */
