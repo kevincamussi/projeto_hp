@@ -60,9 +60,10 @@
     }
 
     @media (max-width:$smallScreen) {
+
         .logo {
             width:150px;
-            margin-top: -8px;
+            margin-top: -4px;
         }
 
         .material-symbols-outlined{
@@ -70,7 +71,6 @@
         }
     
         &-menu {
-            background-color:$black;
             text-align: center;
             margin-right: 4px;
             display: block;
@@ -81,6 +81,7 @@
             font-size: 8px;
             padding:8px 16px;
             display: block;
+            background-color:$black;
 
                 &:hover{
                     background-color: $grey;

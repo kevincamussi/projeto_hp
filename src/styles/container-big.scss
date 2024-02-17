@@ -1,5 +1,12 @@
+@import './variables.scss';
+
 .container-big {
     max-width: 1800px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width:$smallScreen){
+        height: 16px;
+    
+    }
 }

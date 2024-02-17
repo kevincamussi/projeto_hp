@@ -28,14 +28,14 @@
                     <a href="#filmes" class="head-menu__link">Filmes</a>
                 </li>
                 <li class="head-menu__item">
-                    <a href="#personagens" class="head-menu__link">Personagens</a>
+                    <a href="#personagens" class="head-menu__link">Personagens Principais</a>
                 </li>
             </ul>
         </div>
     </header>
     <main>
         <div class="container-medium">
-            <img src="./images/harry.jpg" alt="Imagem do Harry Potter">
+            <img class="hero" src="./images/harry.jpg" alt="Imagem do Harry Potter">
             <section class="sections" id="origem" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="title">Origem</h2>
                 <p class="text">Harry Potter é uma série de sete romances de fantasia escrita pela autora britânica J.
@@ -54,15 +54,17 @@
                     
 
             </section>
-            <section class="sections" id="personagens" data-aos="fade-up" data-aos-duration="2000">
-                <h2 class="title">Personagens</h2>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus blanditiis
-                    praesentium ad, omnis perspiciatis repellendus adipisci quaerat illum voluptatem error nobis
-                    officia, harum aspernatur dolorum esse officiis libero doloribus tempore?
-                </p>
+            <h2  data-aos="fade-up" data-aos-duration="2000" id="personagens" class="personagens__title ">Personagens Principais</h2>
+            <section class="personagens"  data-aos="fade-up" data-aos-duration="2000">
+    
             </section>
         </div>
     </main>
+
+    <footer class="footer">
+        <img class="footer__img" src="./images/reliquias.png" alt="">
+        <p>By: <a class="footer__link" href="https://github.com/kevincamussi">Kevin Camussi</a></p>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
@@ -72,7 +74,7 @@
     <script src="./scripts/headerScroll.js"></script>
     <script src="./scripts/movies.js"></script>
     <script src="./scripts/flipCard.js"></script>
-   
+    <script src="./scripts/characters.js"></script>
 </body>
 
 </html>

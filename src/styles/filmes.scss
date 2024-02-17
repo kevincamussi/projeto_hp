@@ -1,29 +1,25 @@
 @import './variables.scss';
 
-.sections {
-    padding-top: 118px;
-   
-    .filmes {        
-        display: grid;
-        grid-template-columns:repeat(3, 25%) ;
-        gap: 48px; 
-        justify-content: center;
-    
-        &__item {
-            height: 540px;
-            cursor: pointer;
-    
-            &__text {
-                padding: 16px;
-            }
+.filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,  24rem));
+    justify-content: center;
+    gap: 48px;
+
+    &__item {
+        height: 540px;
+        cursor: pointer;
+
+        &__text {
+            padding: 16px;
         }
-        
-        &__imagem {
-            height: 540px;
-        }
-    
-        &__back {
-            border: 1px solid $grey;
-        }
+    }
+
+    &__imagem {
+        height: 540px;
+    }
+
+    &__back {
+        border: 1px solid $grey;
     }
 }

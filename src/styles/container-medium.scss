@@ -9,12 +9,17 @@
 
     .sections {
         margin-top: 32px;
-
+        padding-top: 118px;
     }
 
-    img{
+    .hero {
         width: 100%;
     }
 
-
+    @media (max-width:$smallScreen){
+            
+        .hero{
+           
+        }
+    }
 }

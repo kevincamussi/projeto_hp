@@ -1,0 +1,2 @@
+.text{padding:0 32px;letter-spacing:1px}.title{margin:16px 0}.bg-black{background-color:rgba(0,0,0,.8);transform:ease-in;transition:.8s}.personagens{display:grid;grid-template-columns:repeat(auto-fit, 16rem);justify-content:center;gap:32px;padding:0;margin:0}.personagens__card__img{overflow:hidden;max-width:150px;max-height:90px;margin:0 auto}.personagens__card .text{font-weight:normal;margin-top:4px}.personagens__title{padding-top:118px;padding-bottom:8px}
+/*# sourceMappingURL=maps/characters.css.map */

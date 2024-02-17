@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.footer {
+    background-color: $black;
+    text-align: center;
+    color: $white;
+
+    &__img {
+        width: 150px;
+        margin: -32px;
+    }
+    
+    &__link {
+        color: $white;
+        display: inline-block;
+        padding-bottom: 16px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }   
+}
+
+
