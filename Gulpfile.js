@@ -9,6 +9,20 @@ const clean = require('gulp-clean');
 const babel = require("gulp-babel");
 const plumber = require("gulp-plumber");
 
+const compressHtml = () => {
+    return gulp.src('./src/index.html')
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('./dist'));
+}
+
+const styles = () => {
+    return gulp.src('./src/styles/*.scss')
+            .pipe(sourcemaps.init())
+            .pipe(sass({ outputStyle: 'compressed' }))
+            .pipe(sourcemaps.write('./maps'))
+            .pipe(gulp.dest('./dist/styles'));
+}
+
 const scripts = () => {
     return gulp.src('./src/scripts/*.js')
         .pipe(plumber())
@@ -25,16 +39,7 @@ const scripts = () => {
                 })
             )
         .pipe(uglify())
-        .pipe(obfuscate())
         .pipe(gulp.dest('./dist/scripts'));
-}
-
-const styles = () => {
-    return gulp.src('./src/styles/*.scss')
-            .pipe(sourcemaps.init())
-            .pipe(sass({ outputStyle: 'compressed' }))
-            .pipe(sourcemaps.write('./maps'))
-            .pipe(gulp.dest('./dist/styles'));
 }
 
 const compressImg = () => {
@@ -43,14 +48,10 @@ const compressImg = () => {
         .pipe(gulp.dest('./dist/images'));
 }
 
-const compressHtml = () => {
-    return gulp.src('./src/index.html')
-        .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest('./dist'));
-}
+
 
 const clear = () => {
-    return gulp.src('./dev', { read: false })
+    return gulp.src('./dev', { read: false, allowEmpty:true, force:true })
         .pipe(clean());
 }
 
@@ -74,7 +75,6 @@ const scriptDev = () => {
         )
         .pipe(uglify())
         .pipe(gulp.dest('./dev/scripts'));
-
 }
 
 const compressImgDev = () => {
